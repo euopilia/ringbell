@@ -21,7 +21,6 @@ This project enables authenticated users to create, update, and store alarm conf
 
 ## 🧩 Project Structure
 
-```
 
 ringbell/
 │
@@ -36,7 +35,6 @@ ringbell/
 ├── package.json             # Dependencies + scripts
 └── README.md                # Documentation
 
-````
 
 ---
 
