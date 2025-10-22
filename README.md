@@ -1,6 +1,6 @@
 ## 📘 **README.md**
 
-```markdown
+````markdown
 # 🕒 RingBell – Alarm Scheduler (React + Supabase)
 
 A modern alarm scheduling web app built with **React (Vite)** and **Supabase**.  
@@ -20,6 +20,7 @@ This project enables authenticated users to create, update, and store alarm conf
 ---
 
 ## 🧩 Project Structure
+````
 
 
 ringbell/
@@ -35,14 +36,14 @@ ringbell/
 ├── package.json             # Dependencies + scripts
 └── README.md                # Documentation
 
-
+````
 ---
 
 ## ⚙️ Environment Setup
 
 Create a `.env` file in your project root (not committed to GitHub):
-
-```bash
+````
+````bash
 VITE_SUPABASE_URL=https://<your-project>.supabase.co
 VITE_SUPABASE_ANON_KEY=<your-anon-key>
 VITE_SUPABASE_FUNCTIONS_BASE_URL=https://<your-project>.supabase.co/functions/v1
