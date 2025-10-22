@@ -1,5 +1,5 @@
 
-🕒 RingBell – Alarm Scheduler (React + Supabase)
+## 🕒 RingBell – Alarm Scheduler (React + Supabase)
 
 A modern alarm scheduling web app built with React (Vite) and Supabase.
 Enables authenticated users to create, update, and store alarm configurations directly in Supabase Storage via Edge Functions.
@@ -24,7 +24,7 @@ Enables authenticated users to create, update, and store alarm configurations di
 
 
 ---
-
+````
 🧩 Project Structure
 
 ringbell/
@@ -39,7 +39,7 @@ ringbell/
 ├── .gitignore               # Ignored files
 ├── package.json             # Dependencies + scripts
 └── README.md                # Documentation
-
+````
 
 ---
 
