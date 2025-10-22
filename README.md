@@ -46,11 +46,11 @@ ringbell/
 ⚙️ Environment Setup
 
 Create a .env file in your project root:
-
+````
 VITE_SUPABASE_URL=https://<your-project>.supabase.co
 VITE_SUPABASE_ANON_KEY=<your-anon-key>
 VITE_SUPABASE_FUNCTIONS_BASE_URL=https://<your-project>.supabase.co/functions/v1
-
+````
 > 🔒 Never share your Supabase keys publicly.
 The anon key is client-safe; never expose service keys.
 
@@ -61,16 +61,16 @@ The anon key is client-safe; never expose service keys.
 
 📦 Installation (Collaborator Setup)
 
-# 1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/<your-username>/<repo-name>.git
 cd ringbell
 
-# 2. Install dependencies
+### 2. Install dependencies
 npm install
 
-# 3. Create your own .env file (as above)
+### 3. Create your own .env file (as above)
 
-# 4. Start the dev server
+### 4. Start the dev server
 npm run dev
 
 App runs at: http://localhost:5173
@@ -82,26 +82,26 @@ App runs at: http://localhost:5173
 
 Centralized logic for Supabase client, Edge Functions, CRUD operations, and sync.
 
-1. Authentication
+## 1. Authentication
 
 export async function signIn(email, password)
 
 Authenticates user via Supabase. Throws error on invalid credentials.
 
-2. Fetch Schedule
+## 2. Fetch Schedule
 
 export async function fetchSchedule()
 
 Fetches schedule.json using Edge Function getSchedule.
 Returns parsed JSON or { error, message }.
 
-3. Save / Upload Schedule
+## 3. Save / Upload Schedule
 
 export async function saveSchedule(payload)
 
 Uploads schedule via postSchedule with upsert: true behavior.
 
-4. Alarm Manipulation
+## 4. Alarm Manipulation
 
 Function	Description
 
@@ -123,7 +123,7 @@ Alarm Structure:
   isOn: true
 }
 
-5. Cloud Sync Helpers
+## 5. Cloud Sync Helpers
 
 export const syncAlarmsToSupabase = async () => saveSchedule(alarms);
 export const loadAlarmsFromSupabase = async () => fetchSchedule();
